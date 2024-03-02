@@ -10,6 +10,7 @@ export default function App() {
   return (
       <div>
         <Navbar/>
+        <div className="py-14"></div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />

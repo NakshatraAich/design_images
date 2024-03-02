@@ -5,7 +5,7 @@ import Features from "../Components/Features"
 
 const Home = () => {
   return (
-    <section className="pt-28">
+    <section>
       <Hero />
       <Stretch />
       <Types />
