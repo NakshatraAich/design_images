@@ -1,26 +1,21 @@
+import { logo } from "../assets";
+
 const About = () => {
   return (
     <section>
-      <div className="tracking-widest pt-12">
-        <div className="px-[200px] flex flex-col gap-2 pb-16">
-          <h1 className="text-6xl text-textColor font-semibold">About Us</h1>
-          <h2 className="text-altTextColor max-w-[750px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h2>
+      <div className="tracking-widest py-12">
+        <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pt-8 sm:pt-0 pb-16">
+          <h1 className="text-4xl sm:text-6xl text-textColor font-semibold">About Us</h1>
+          <h2 className="text-altTextColor max-w-[750px]">With over 50+ years of experience in the glass industry and registered in the year 1972. </h2>
         </div>
-        <div className="flex flex-row px-[200px] justify-between gap-16">
-          <div className="flex flex-col items-start">
-            <img src="https://images.unsplash.com/photo-1552234994-66ba234fd567?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1500" className="rounded-2xl" alt="Burger" />
-            <div className="pt-4 text-2xl text-textColor font-semibold">Name</div>
-            <div className="text-altTextColor">Position</div>
-          </div>
-          <div className="flex flex-col items-start">
-            <img src="https://images.unsplash.com/photo-1552234994-66ba234fd567?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1500" className="rounded-2xl" alt="Burger" />
-            <div className="pt-4 text-2xl text-textColor font-semibold">Name</div>
-            <div className="text-altTextColor">Position</div>
-          </div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1552234994-66ba234fd567?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="1500" className="rounded-2xl" alt="Burger" />
-            <div className="pt-4 text-2xl text-textColor font-semibold">Name</div>
-            <div className="text-altTextColor">Position</div>
+        <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-col xl:flex-row gap-20 xl:gap-32 items-center">
+          <img src={logo} className="max-w-[30rem]"/>
+          <div className="flex flex-col gap-4 text-textColor ">
+            <h1 className="text-2xl font-semibold">About Design Images</h1>
+            <div className="w-full border-b-2 border-[#c9c9c9]"></div>
+            <p>
+            Design Image Is the manufacturer of glass plates for modular switches in India. We are pioneers in the industry. We offer innovative designs of glass plate for switch industries. From the very beginning, the company has focused on its core principles of customer service, quality, value for money. It is these principle that has enabled the company to gain the trust of customers. On the manufacturing front, we invest in new technology and machinery to continue it's popular pace with new designs and styles to suit clients needs.
+            </p>
           </div>
         </div>
       </div>

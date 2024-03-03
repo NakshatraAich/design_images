@@ -10,14 +10,14 @@ export default function App() {
   return (
       <div>
         <Navbar/>
-        <div className="py-14"></div>
+        <div className="sm:py-14 py-12"></div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Products" element={<Products />} />
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     )
 }

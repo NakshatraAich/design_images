@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <section>
       <Hero />
-      <Stretch />
+      <Stretch /> 
       <Types />
-      <Features />
+      <Features /> 
     </section>
   )
 }

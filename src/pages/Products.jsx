@@ -1,178 +1,206 @@
-const Products = () => {
+import { useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-  const featuresAndTopics = [
-    { feature: "Material", topic: "Toughened Glass" },
-    { feature: "Edge", topic: "Beveled/Straight Edge" },
-    { feature: "Size", topic: "As per customer Requirement" },
-    { feature: "Colour Variants", topic: "As per customer Requirement" },
-    { feature: "Packaging", topic: "EPE Foam Bag, Carton box, Safety Wooden box" },
-    { feature: "Delivery", topic: "10-15 Days" },
-    { feature: "OEM", topic: "Provided" },
-    { feature: "Printing Type", topic: "Digital Print / Screen Print" },
-    { feature: "Effects", topic: "Mirror, Frosting" }
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+const Products = () => {
+  const [activeTab, setActiveTab] = useState('modularswitchglassplates');
+
+  const productCategories = [
+    {
+      id: 'modularswitchglassplates',
+      name: 'Touch Switch/Switch Panels',
+      featuresAndTopics : [
+        { feature: 'Material', topic: 'Toughened Glass' },
+        { feature: 'Edge', topic: 'Beveled/Straight Edge' },
+        { feature: 'Size', topic: 'As per customer Requirement' },
+        { feature: 'Colour Variants', topic: 'As per customer Requirement' },
+        { feature: 'Packaging', topic: 'EPE Foam Bag, Carton box, Safety Wooden box' },
+        { feature: 'Delivery', topic: '10-15 Days' },
+        { feature: 'OEM', topic: 'Provided' },
+        { feature: 'Printing Type', topic: 'Digital Print / Screen Print' },
+        { feature: 'Effects', topic: 'Mirror, Frosting' },
+      ],
+      images: [
+        'https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      ],
+    },
+    {
+      id: 'Modular Switch Glass Plates',
+      name: 'Modular Switch Glass Plates',
+      featuresAndTopics : [
+        { feature: 'Material', topic: 'Toughened Glass' },
+        { feature: 'Edge', topic: 'Beveled/Straight Edge' },
+        { feature: 'Size', topic: 'As per customer Requirement' },
+        { feature: 'Colour Variants', topic: 'As per customer Requirement' },
+        { feature: 'Packaging', topic: 'EPE Foam Bag, Carton box, Safety Wooden box' },
+        { feature: 'Delivery', topic: '10-15 Days' },
+        { feature: 'OEM', topic: 'Provided' },
+        { feature: 'Printing Type', topic: 'Digital Print / Screen Print' },
+        { feature: 'Effects', topic: 'Mirror, Frosting' },
+      ],
+      images: [
+        'https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      ],
+    },
+    {
+      id: 'Machinery',
+      name: 'Machinery',
+      featuresAndTopics : [
+        { feature: 'Material', topic: 'Toughened Glass' },
+        { feature: 'Edge', topic: 'Beveled/Straight Edge' },
+        { feature: 'Size', topic: 'As per customer Requirement' },
+        { feature: 'Colour Variants', topic: 'As per customer Requirement' },
+        { feature: 'Packaging', topic: 'EPE Foam Bag, Carton box, Safety Wooden box' },
+        { feature: 'Delivery', topic: '10-15 Days' },
+        { feature: 'OEM', topic: 'Provided' },
+        { feature: 'Printing Type', topic: 'Digital Print / Screen Print' },
+        { feature: 'Effects', topic: 'Mirror, Frosting' },
+      ],
+      images: [
+        'https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://plus.uplash.com/pmium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      ],
+    },
   ];
 
-  const render = (array) => {
-    return array.map((item, index) => (
-      <p key={index} className="pb-4">
-        <p className="text font-bold text-textColor">{item.feature}</p>
-        <p className="text-lg font text-altTextColor">{item.topic}</p>
-      </p>
-    ));
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
   };
 
   return (
-    <div className="tracking-widest pt-12">
-      <div className="px-[200px] flex flex-col gap-2 pb-16">
-          <h1 className="text-6xl text-textColor font-semibold">Products</h1>
-          <h2 className="text-altTextColor max-w-[750px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
+    <div className="tracking-widest pt-16 sm:pt-12 flex flex-col">
+      <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pb-8 sm:pb-16">
+        <h1 className="text-4xl sm:text-6xl text-textColor font-semibold">Products</h1>
+        <h2 className="text sm:text text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
+      </div>
+      
+      <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-row gap-2 pb-[2rem] overflow-scroll no-scrollbar">
+        {productCategories.map((category) => (
+          <button
+            key={category.id}
+            className={`tab btn focus:bg-brandColor ${activeTab === category.id ? 'active border-brandColor bg-brandColor text-white' : 'border-brandColor border-2 bg-white text-brandColor'} border-brandColor bg-brandColor rounded-full`}
+            onClick={() => handleTabChange(category.id)}
+          >
+            {category.name}
+          </button>
+        ))}
       </div>
 
-      <div className="px-[200px] flex flex-col gap-2 pb-16">
-        <h3 className="text-2xl text-textColor font-semibold pb-4">Touch Switch/Switch Panels</h3>   
-        
-        <div className="carousel carousel-center max-w-full pr-4 space-x-4 bg-neutral rounded-box">
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-        </div> 
+      {productCategories.map((category) => (
+        <div
+          key={category.id}
+          id={category.id}
+          className={`flex flex-col px-[50px] sm:px-[90px] xl:px-[200px] pb-12 product-section ${activeTab === category.id ? 'active' : 'hidden'}`}
+        >
 
-        <div className="join join-vertical w-full flex flex-col gap-2 pt-8">
-          <div className="collapse collapse-plus join-item border-0">
-            <input type="radio" name="my-accordion-4" /> 
-            <div className="collapse-title text-altTextColor text-xl font-semibold border-b-2">
-                Product Specifications
+          <div>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              centeredSlides={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              
+              {category.images.map((image, index) => (
+                // eslint-disable-next-line react/jsx-key
+                <SwiperSlide>
+                  <div key={index} className="carousel-item">
+                    <img src={image} className="h-auto rounded-box" alt={`Product ${index}`} />
+                  </div>
+                </SwiperSlide>
+                  ))}
+            </Swiper>
+          </div>
+
+          <div className="pt-4 collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-1" /> 
+            <div className="collapse-title text-xl font-medium border-b-2 border-[#C9C9C9]">
+              Product Specifications
             </div>
-            <div className="collapse-content"> 
-              <p className="pt-4">
-                {render(featuresAndTopics)}
-              </p>
+            <div className="collapse-content w-full flex flex-col gap-4 pt-4">
+              {category.featuresAndTopics.map((item, index) => (
+                <div key={index} className="border-0">
+                  <div className="text-altTextColor text-sm font-bold">
+                    {item.feature}
+                  </div>
+                  <div className="font-medium text-xs">
+                    <p className="pt-2">
+                      <span className="text leading-none font-medium text-textColor">{item.topic}</span>
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="collapse collapse-plus join-item border-0">
-            <input type="radio" name="my-accordion-4" /> 
-            <div className="collapse-title text-altTextColor text-xl font-semibold border-b-2">
-              Glass Specifications
+          
+          <div className="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-1" /> 
+            <div className="collapse-title text-xl font-medium border-b-2 border-[#C9C9C9]">
+              Product Specifications
             </div>
-            <div className="collapse-content"> 
-              <p className="pt-4">
-                {render(featuresAndTopics)}
-              </p>
+            <div className="collapse-content w-full flex flex-col gap-4 pt-4">
+              {category.featuresAndTopics.map((item, index) => (
+                <div key={index} className="border-0">
+                  <div className="text-altTextColor text-sm font-bold">
+                    {item.feature}
+                  </div>
+                  <div className="font-medium text-xs">
+                    <p className="pt-2">
+                      <span className="text leading-none font-medium text-textColor">{item.topic}</span>
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+
         </div>
-
-      </div>
-
-      <div className="px-[200px] flex flex-col gap-2 pb-16">
-        <h3 className="text-2xl text-textColor font-semibold pb-4">Touch Switch/Switch Panels</h3>   
-        
-        <div className="carousel carousel-center max-w-full pr-4 space-x-4 bg-neutral rounded-box">
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-        </div> 
-
-        <div className="join join-vertical w-full flex flex-col gap-2 pt-8">
-          <div className="collapse collapse-plus join-item border-0">
-            <input type="radio" name="my-accordion-4" /> 
-            <div className="collapse-title text-altTextColor text-xl font-semibold border-b-2">
-                Product Specifications
-            </div>
-            <div className="collapse-content"> 
-              <p className="pt-4">
-                {render(featuresAndTopics)}
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-plus join-item border-0">
-            <input type="radio" name="my-accordion-4" /> 
-            <div className="collapse-title text-altTextColor text-xl font-semibold border-b-2">
-              Glass Specifications
-            </div>
-            <div className="collapse-content"> 
-              <p className="pt-4">
-                {render(featuresAndTopics)}
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div className="px-[200px] flex flex-col gap-2 pb-16">
-        <h3 className="text-2xl text-textColor font-semibold pb-4">Touch Switch/Switch Panels</h3>   
-        
-        <div className="carousel carousel-center max-w-full pr-4 space-x-4 bg-neutral rounded-box">
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-          <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[28rem] h-auto rounded-box" />
-          </div> 
-        </div> 
-
-        <div className="join join-vertical w-full flex flex-col gap-2 pt-8">
-          <div className="collapse collapse-plus join-item border-0">
-            <input type="radio" name="my-accordion-4" /> 
-            <div className="collapse-title text-altTextColor text-xl font-semibold border-b-2">
-                Product Specifications
-            </div>
-            <div className="collapse-content"> 
-              <p className="pt-4">
-                {render(featuresAndTopics)}
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-plus join-item border-0">
-            <input type="radio" name="my-accordion-4" /> 
-            <div className="collapse-title text-altTextColor text-xl font-semibold border-b-2">
-              Glass Specifications
-            </div>
-            <div className="collapse-content"> 
-              <p className="pt-4">
-                {render(featuresAndTopics)}
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      ))}
+      
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
