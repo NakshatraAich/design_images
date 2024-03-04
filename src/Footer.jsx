@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col bg-brandColor ">
-      <div className="bg-brandColor flex flex-col-reverse gap-16 lg:flex-row justify-between tracking-widest py-32 px-[50px] sm:px-[90px] xl:px-[200px]">
+      <div className="bg-brandColor flex flex-col-reverse gap-16 lg:flex-row justify-between tracking-widest py-16 sm:py-32 px-[50px] sm:px-[90px] xl:px-[200px]">
         <div className="flex flex-col-reverse">
           <img src={logo_alt} width={300} className="self-center"/>
           <div className="flex flex-row justify-center lg:py-4 py-12 gap-8">

@@ -7,6 +7,9 @@ import Products from "./pages/Products"
 import Contact from "./pages/Contact"
 
 export default function App() {
+
+  
+
   return (
       <div>
         <Navbar/>

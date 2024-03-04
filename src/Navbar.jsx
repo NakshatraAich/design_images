@@ -43,23 +43,32 @@ const Navbar = () => {
             </div>
         </div>
 
-        <div className="sm:hidden fixed top-0 z-[9999] w-full pt-4 flex flex-col items-center justify-between bg-white">
-            <div className="flex-none px-[20px] pb-4">
+        <div className="sm:hidden fixed top-0 z-[9999] w-full pt-4 flex flex-row-reverse items-center justify-between bg-white">
+            <div className="invisible">
+                <div  className="border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </div>
+            </div>
+            <div className="flex-none px-[20px] pb-4 self-center">
                 <a>
                     <img src={logo} width={170}/>
                 </a>   
             </div>
-            <div className="bg-brandColor text-white py-[0.01px] w-full flex flex-col items-center justify-center">
-                <div>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="3" cy="12" r="1" fill="white"/>
-                        <circle cx="12" cy="12" r="1" fill="white"/>
-                        <circle cx="21" cy="12" r="1" fill="white"/>
-                    </svg>
+            <div className="dropdown dropdown-bottom bg-white">
+                <div tabIndex={0} role="button" className="btn border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </div>
+                <ul tabIndex={0} className="bg-white p-4 dropdown-content z-[1] menu p-2 shadow rounded-box w-52">
+                    <li><NavLink to="/"><span className="font-semibold">Homepage</span></NavLink></li>
+                    <li><NavLink to="/About"><span className="font-semibold">About Us</span></NavLink></li>
+                    <li><NavLink to="/Products"><span className="font-semibold">Products</span></NavLink></li>
+                    <NavLink to="/Contact" className="btn rounded-full border-0 mt-4 bg-alertColor hover:bg-[#2e9d71] bg-slate-800s text-sm">
+                        <span className="px-8 text-brandColor font-semibold">Contact Us</span>
+                    </NavLink>   
+                </ul>
             </div>
-        </div>
-
+        </div>    
+          
     </nav>
   )
 }
