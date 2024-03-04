@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <div className="flex flex-col bg-brandColor ">
       <div className="bg-brandColor flex flex-col-reverse gap-16 lg:flex-row justify-between tracking-widest py-16 sm:py-32 px-[50px] sm:px-[90px] xl:px-[200px]">
-        <div className="flex flex-col-reverse">
-          <img src={logo_alt} width={300} className="self-center"/>
+        <div className="flex flex-col-reverse justify-start">
+          <img src={logo_alt} width={300} className="self-start"/>
           <div className="flex flex-row justify-center lg:py-4 py-12 gap-8">
             <ul className="text text-white font-medium flex flex-col gap-3">
               <li className="px-0 py-0"><NavLink to="/">Homepage</NavLink></li>
@@ -22,15 +22,15 @@ const Footer = () => {
             <ul className="text text-white font-medium flex flex-col gap-4">
               <li>
                 <li>Address</li>
-                <li className="text-[.75rem] font-thin">ABC Street 123, City, State,<br/> Country - 100203</li>
+                <li className="text-[.75rem] font-thin">Shiv Glass House, Nr,<br/> Shakti tenament,Opp.Money <br/>Hotel, Isanpur, Ahmedabad-380050</li>
               </li>
               <li>
                 <li>Phone Number</li>
-                <li className="text-[.75rem] font-thin">+91 22xxx 33xxx</li>
+                <li className="text-[.75rem] font-thin">+91 80002 93444</li>
               </li>
               <li>
                 <li>Email</li>
-                <li className="text-[.75rem] font-thin">example@example.com</li>
+                <li className="text-[.75rem] font-thin">info@design-image.in</li>
               </li>
               <li>
                 <li><div onClick={handleWhatsAppClick}>Whatsapp</div></li>

@@ -1,6 +1,11 @@
 import { whatsapp, call, email } from "../assets"
 
 const Contact = () => {
+
+  const handleWhatsAppClick = () => {
+    window.open(`whatsapp://send?phone=${918000293444}`, '_blank');
+  };
+
   return (
     <div className="tracking-widest pt-12">
       <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pb-12 pt-8 sm:pt-0 sm:pb-16">
@@ -14,7 +19,7 @@ const Contact = () => {
           </div>
           <div>
             <h1 className="shrink-0 font-semibold">Chat with us on Whatsapp!</h1>
-            <h2 className="text-[#9C9C9C] text-sm pt-2">Open Whatsapp </h2>
+            <h2 className="cursor-pointer text-[#9C9C9C] text-sm pt-2" onClick={handleWhatsAppClick}>Open Whatsapp</h2>
           </div>
         </div>
         <div className="shrink-0 flex flex-col justify-between w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] border-2 border-[#D8D8D8] rounded-2xl p-6">

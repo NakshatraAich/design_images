@@ -1,4 +1,5 @@
 import { switch_1 } from "../assets"
+import { NavLink } from "react-router-dom"
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
                 <div className="text-4xl sm:text-6xl text-textColor font-semibold">Elevate with<br className="xl:block hidden"/>  Elegance</div>
                 <div className="text sm:text-lg text-altTextColor font-regular">Discover design excellence in every switch<br className="xl:block hidden"/> with Design Image's glass plates.</div>
             </div>
-            <button className="btn px-12 h-8 w-fit text-brandColor font-semibold border-0 bg-alertColor hover:bg-[#2e9d71] rounded-full">See Our Products</button>
+            <NavLink to="/Products"><button className="btn px-12 h-8 w-fit text-brandColor font-semibold border-0 bg-alertColor hover:bg-[#2e9d71] rounded-full">See Our Products</button></NavLink>
         </div>
         <div className="pr-4">
             <img src={switch_1} width={570}/>
