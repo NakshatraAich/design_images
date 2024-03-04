@@ -4,8 +4,8 @@ const Types = () => {
 
     return (
         <section className="px-[50px] sm:px-[90px] xl:px-[160px] flex flex-col tracking-wider py-20">
-            <h1 className="text-2xl sm:text-4xl text-textColor font-semibold">Lorem ipsum dolor sit amet,<br className="lg:block hidden"/> consectetur.</h1>
-            <h2 className="text-sm sm:text-lg text-altTextColor pt-2">Lorem ipsum dolor sit amet, consectetur.</h2>
+            <h1 className="text-2xl sm:text-4xl text-textColor font-semibold">Check out wide array<br className="lg:block hidden"/> of products.</h1>
+            <h2 className="text-sm sm:text-lg text-altTextColor pt-2">From switch panels to machinery view glasses</h2>
             <div className="hidden lg:flex flex-row justify-between xl:justify-evenly gap-12 xl:px-16 pt-8">
                 <div className="flex flex-col">
                     <img src={taj} width={300}/>

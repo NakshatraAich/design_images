@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Products" element={<Products />} />
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     )
 }
