@@ -7,8 +7,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="tracking-widest pt-12">
-      <div className="px-[25px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pb-12 pt-8 sm:pt-0 sm:pb-16">
+    <div className="tracking-widest pt-24 sm:pt-20">
+      <div className="px-[25px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pb-12 sm:pb-16">
         <h1 className="text-4xl sm:text-6xl text-textColor font-semibold">Contact Us</h1>
         <h2 className="text-textColor">Get in touch with us for any inquiries or quotations.</h2>
       </div>
