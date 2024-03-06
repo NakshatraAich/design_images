@@ -19,7 +19,7 @@ const Types = () => {
     };
 
     return (
-        <section className="px-[50px] sm:px-[90px] xl:px-[160px] flex flex-col tracking-wider py-20">
+        <section className="px-[25px] sm:px-[90px] xl:px-[160px] flex flex-col tracking-wider py-20">
             <h1 className="text-3xl sm:text-4xl text-textColor font-semibold">Check out wide array<br className="lg:block hidden"/> of products.</h1>
             <h2 className="text-sm sm:text-lg text-altTextColor pt-2">From switch panels to machinery view glasses</h2>
             <div className="hidden lg:flex flex-row justify-between xl:justify-evenly gap-12 xl:px-16 pt-8">
@@ -33,7 +33,7 @@ const Types = () => {
                 </div>
                 <div className="flex flex-col">
                     <img src={glass_1} width={300}/>
-                    <div className="text-textColor text-xl font-semibold pt-2">Touch Switch/Panel Glasses</div>
+                    <div className="text-textColor text-xl font-semibold pt-2">Machinery View Glasses</div>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ const Types = () => {
                 <button className="btn btn-ghost text-brandColor border-0 w-fit px-10  text-semibold font-regular hover:font-semibold rounded-full">See More</button>
             </NavLink>
             
-            <div className="lg:hidden flex carousel justify-between xl:justify-evenly gap-12 xl:px-16 pt-8">
+            <div className="lg:hidden hidden md:flex carousel justify-between xl:justify-evenly gap-12 xl:px-16 pt-8">
                 <div id="item1" className="carousel-item max-w-[300px] flex flex-col justify-start">
                     <div className="flex flex-col justify-center items-start">
                         <img src={taj} className="w-full"/>
@@ -62,7 +62,34 @@ const Types = () => {
                     <div className="flex flex-col justify-center items-start">
                         <img src={glass_1} className="w-full"/>
                         <div className="">
+                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Machinery View Glasses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="sm:hidden flex flex-col items-center sm:carousel carousel-vertical carousel-center justify-between xl:justify-evenly gap-12 xl:px-16 pt-8">
+                <div id="item1" className="carousel-item max-w-[300px] flex flex-col justify-start">
+                    <div className="flex flex-col justify-center items-start">
+                        <img src={taj} className="w-full"/>
+                        <div className="">
                             <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Touch Switch/Panel Glasses</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item2" className="carousel-item max-w-[300px] flex flex-col justify-start">
+                    <div className="flex flex-col justify-center items-start">
+                        <img src={switch_2} className="w-full"/>
+                        <div className="">
+                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Touch Switch/Panel Glasses</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item3" className="carousel-item max-w-[300px] flex flex-col justify-start">
+                    <div className="flex flex-col justify-center items-start">
+                        <img src={glass_1} className="w-full"/>
+                        <div className="">
+                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Machinery View Glasses</div>
                         </div>
                     </div>
                 </div>

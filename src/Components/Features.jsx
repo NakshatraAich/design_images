@@ -2,7 +2,7 @@ import { bulb, award, customer } from "../assets";
 
 const Features = () => {
   return (
-    <section className="flex xl:flex-row flex-col justify-between px-[50px] sm:px-[90px] xl:px-[160px] tracking-widest py-32 bg-[#D9D9D9] gap-12">
+    <section className="flex xl:flex-row flex-col justify-between px-[25px] sm:px-[90px] xl:px-[160px] tracking-widest py-32 bg-[#D9D9D9] gap-12">
         <div>
             <h1 className="text-4xl sm:text-5xl font-semibold text-textColor leading-30 pb-2 sm:pb-5">Why Design Images?</h1>
             <h2 className="text-sm sm:text-lg text-altTextColor"> Elevate your experience with innovative designs, uncompromising quality, and customer-centric service.</h2>
