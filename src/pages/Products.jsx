@@ -37,11 +37,11 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ],
       images: [
-        '../src/assets/products/2mtouch.jpg',
-        '../src/assets/products/touch.jpg',
-        '../src/assets/products/bru.jpg',
-        '../src/assets/products/touch3.jpg',
-        '../src/assets/products/taj.jpg',
+        "../src/assets/products/2mtouch.jpg",
+        "../src/assets/products/touch.jpg",
+        "../src/assets/products/bru.jpg",
+        "../src/assets/products/touch3.jpg",
+        "../src/assets/products/taj.jpg",
       ],
     },
     {
@@ -67,11 +67,11 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ], 
       images: [
-        '../src/assets/products/modular.jpg',
-        '../src/assets/products/modular2.jpg',
-        '../src/assets/products/modular3.jpg',
-        '../src/assets/products/modular4.jpg',
-        '../src/assets/products/modular5.jpg',
+        "../src/assets/products/modular.jpg",
+        "../src/assets/products/modular2.jpg",
+        "../src/assets/products/modular3.jpg",
+        "../src/assets/products/modular4.jpg",
+        "../src/assets/products/modular5.jpg",
         
       ],
     },
@@ -97,11 +97,10 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ],      
       images: [
-        '../src/assets/products/glass.jpg',
-        '../src/assets/products/lift.jpg',
-        '../src/assets/products/machinery2.jpg',
-        '../src/assets/products/machinery3.jpg',
-        
+        "../src/assets/products/glass.jpg",
+        "../src/assets/products/lift.jpg",
+        "../src/assets/products/machinery2.jpg",
+        "../src/assets/products/machinery3.jpg",
       ],
     },
   ];
