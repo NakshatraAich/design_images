@@ -5,15 +5,19 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Products from "./pages/Products"
 import Contact from "./pages/Contact"
+import { useState } from "react"
+import React from "react"
+
+export const Context = React.createContext();
 
 export default function App() {
-
   
+  const [activeTab, setActiveTab] = useState('Touch Switch/Switch Panels');
 
   return (
-      <div>
+      <Context.Provider value={[activeTab, setActiveTab] }>
         <Navbar/>
-        <div className="sm:py-14 py-12"></div>
+        <div className="py-4 sm:py-10"></div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -21,6 +25,6 @@ export default function App() {
           <Route path="/Products" element={<Products />} />
         </Routes>
         <Footer/>
-      </div>
+      </Context.Provider>
     )
 }

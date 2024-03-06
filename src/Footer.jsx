@@ -7,38 +7,46 @@ const Footer = () => {
     window.open(`whatsapp://send?phone=${919930376620}`, '_blank');
   };
 
+  const scrollToHeader = () => {
+    const headerElement = document.getElementById('header'); // Replace 'footer' with the actual id of your footer element
+  
+    if (headerElement) {
+      window.scrollTo({
+        top: headerElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
-    <div className="flex flex-col bg-brandColor ">
-      <div className="bg-brandColor flex flex-col-reverse gap-16 lg:flex-row justify-between tracking-widest py-16 sm:py-32 px-[50px] sm:px-[90px] xl:px-[200px]">
-        <div className="flex flex-col-reverse justify-start">
-          <img src={logo_alt} width={300} className="self-start"/>
-          <div className="flex flex-row justify-center lg:py-4 py-12 gap-8">
-            <ul className="text text-white font-medium flex flex-col gap-3">
-              <li className="px-0 py-0"><NavLink to="/">Homepage</NavLink></li>
-              <li className="px-0 py-0"><NavLink to="/About">About</NavLink></li>
-              <li className="px-0 py-0"><NavLink to="/Products">Products</NavLink></li>
-              <li className="px-0 py-0"><NavLink to="/Contact">Contact Us</NavLink></li>
-            </ul>
-            <ul className="text text-white font-medium flex flex-col gap-4">
-              <li>
-                <li>Address</li>
-                <li className="text-[.75rem] font-thin">Shiv Glass House, Nr,<br/> Shakti tenament,Opp.Money <br/>Hotel, Isanpur, Ahmedabad-380050</li>
-              </li>
-              <li>
-                <li>Phone Number</li>
-                <li className="text-[.75rem] font-thin">+91 80002 93444</li>
-              </li>
-              <li>
-                <li>Email</li>
-                <li className="text-[.75rem] font-thin">info@design-image.in</li>
-              </li>
-              <li>
-                <li><div onClick={handleWhatsAppClick}>Whatsapp</div></li>
-              </li>
-            </ul>
-          </div>
+    <div className="flex flex-col bg-brandColor pt-12 sm:pt-24">
+      <div className="bg-brandColor flex flex-col-reverse  xl:gap-24 gap-20 lg:flex-row  lg:justify-between items-start lg:items-start tracking-widest px-[25px] sm:px-[90px] xl:px-[200px]">
+        <div className="flex basis-1/4 flex-row justify-evenly lg:justify-start gap-8 ">
+          <ul className="text-xs sm:text text-white font-medium flex flex-col gap-3">
+            <li className="px-0 py-0"><NavLink onClick={scrollToHeader} to="/">Homepage</NavLink></li>
+            <li className="px-0 py-0"><NavLink onClick={scrollToHeader} to="/About">About</NavLink></li>
+            <li className="px-0 py-0"><NavLink onClick={scrollToHeader} to="/Products">Products</NavLink></li>
+            <li className="px-0 py-0"><NavLink onClick={scrollToHeader} to="/Contact">Contact Us</NavLink></li>
+          </ul>
+          <ul className="text-xs sm:text text-white font-medium flex flex-col gap-4">
+            <li>
+              <li>Address</li>
+              <li className="text-[.75rem] font-thin">Shiv Glass House, Nr,<br/> Shakti tenament,Opp.Money <br/>Hotel, Isanpur, Ahmedabad-380050</li>
+            </li>
+            <li>
+              <li>Phone Number</li>
+              <li className="text-[.75rem] font-thin">+91 80002 93444</li>
+            </li>
+            <li>
+              <li>Email</li>
+              <li className="text-[.75rem] font-thin">info@design-image.in</li>
+            </li>
+            <li>
+              <li><div onClick={handleWhatsAppClick}>Whatsapp</div></li>
+            </li>
+          </ul>
         </div>
-        <form className="flex flex-col font-Inter sm:text-sm text-xs" action="" method="POST" style={{ flex: 4/6 }}>
+        <form className="flex basis-2/4 flex-col font-Inter w-full sm:text-sm text-xs" action="" method="POST">
           <h1 className="text-white text-4xl lg:text-2xl font-semibold pb-4">Send Us Your Inquiries!</h1>
           <div className='grid grid-cols-2 gap-8'>
             <input name='First Name' placeholder='First Name' type='text' className='bg-brandColor border-b-[1px] border-white placeholder-white place text-white focus:border-brandBlack outline-none pb-[10px] py-2'/>
@@ -51,6 +59,9 @@ const Footer = () => {
             <button type="submit" className="bg-white text-brandColor font-semibold rounded-lg focus:outline-1 focus:outline-green-800 enabled:hover:bg-green-800 text-sm px-8 py-2 w-48">Submit</button>
           </div>
         </form>
+      </div>
+      <div className="w-full flex flex-row justify-center">
+        <img src={logo_alt} className="max-w-[250px] m-12 sm:m-16"/>
       </div>
       <div className="border-t-[0.07rem] border-white h-16 flex flex-col justify-center px-2 py-4 items-center">
         <p className="text-white text-xs">Copyright © 2023, Design Image - All Rights Reserved. Icons by <u><a target="_blank" href="https://icons8.com/">Icons8</a></u></p>

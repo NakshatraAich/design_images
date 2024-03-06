@@ -7,7 +7,16 @@ import glass_1 from "./products/glass-1.png";
 import taj from "./products/taj.png";
 import whatsapp from "./logo/whatsapp.svg";
 import call from "./logo/call.png";
-import email from "./logo/email.png"
+import email from "./logo/email.png";
+import bulb from "./logo/bulb.png";
+import award from "./logo/award.png";
+import customer from "./logo/customer.png";
+import clock from "./logo/clock.png";
+import product from "./logo/product.png";
+import satisfaction from "./logo/satisfaction.png";
+import team from "./logo/team.png";
+import tick from "./logo/tick.png";
+import menu from "./logo/menu.png";
 
 
 export{
@@ -20,5 +29,14 @@ export{
     whatsapp,
     call,
     email,
-    glass_1
+    glass_1,
+    bulb,
+    award,
+    customer,
+    clock,
+    product,
+    satisfaction,
+    team,
+    tick,
+    menu
 }

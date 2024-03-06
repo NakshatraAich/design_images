@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,8 +9,10 @@ import 'swiper/css/navigation';
 
 import { Autoplay} from 'swiper/modules';
 
+import { Context } from '../App';
+
 const Products = () => {
-  const [activeTab, setActiveTab] = useState('Touch Switch/Switch Panels');
+  const [activeTab, setActiveTab] = useContext(Context);
 
   const productCategories = [
     {
@@ -108,13 +110,13 @@ const Products = () => {
   };
 
   return (
-    <div className="tracking-widest pt-16 sm:pt-12 flex flex-col">
-      <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pb-8 sm:pb-16">
+    <div className="tracking-widest pt-24 sm:pt-20 flex flex-col">
+      <div className="px-[25px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pb-8 sm:pb-16">
         <h1 className="text-4xl sm:text-6xl text-textColor font-semibold">Products</h1>
         <h2 className="text sm:text text-textColor">Discover an extensive array of inventive and user-friendly products designed to meet your needs and enhance your experience.</h2>
       </div>
       
-      <div className="px-[50px] sm:px-[90px] xl:px-[200px] flex flex-row gap-2 pb-[2rem] overflow-scroll no-scrollbar">
+      <div className="px-[25px] sm:px-[90px] xl:px-[200px] flex flex-row gap-2 pb-[2rem] overflow-scroll no-scrollbar">
         {productCategories.map((category) => (
           <button
             key={category.id}
@@ -130,7 +132,7 @@ const Products = () => {
         <div
           key={category.id}
           id={category.id}
-          className={`flex flex-col px-[50px] sm:px-[90px] xl:px-[200px] pb-12 product-section ${activeTab === category.id ? 'active' : 'hidden'}`}
+          className={`flex flex-col px-[25px] sm:px-[90px] xl:px-[200px] pb-12 product-section ${activeTab === category.id ? 'active' : 'hidden'}`}
         >
 
           <div>
@@ -158,7 +160,7 @@ const Products = () => {
               }}
               loop={true}
 
-              navigation={true}
+              navigation={false}
               modules={[Autoplay]}
               className="mySwiper"
             >
