@@ -37,11 +37,11 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ],
       images: [
-        'https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        '../src/assets/products/2mtouch.jpg',
+        '../src/assets/products/touch.jpg',
+        '../src/assets/products/bru.jpg',
+        '../src/assets/products/touch3.jpg',
+        '../src/assets/products/taj.jpg',
       ],
     },
     {
@@ -67,16 +67,17 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ], 
       images: [
-        'https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://plus.unsplash.com/premium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        '../src/assets/products/modular.jpg',
+        '../src/assets/products/modular2.jpg',
+        '../src/assets/products/modular3.jpg',
+        '../src/assets/products/modular4.jpg',
+        '../src/assets/products/modular5.jpg',
+        
       ],
     },
     {
       id: 'Machinery',
-      name: 'Machinery',
+      name: 'Machinery Glasses',
       featuresAndTopics : [
         { "feature": "Material", "topic": "Toughened Glass" },
         { "feature": "Edge", "topic": "Beveled/Straight Edge" },
@@ -96,11 +97,11 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ],      
       images: [
-        'https://images.unsplash.com/photo-1678107520091-c250d5068943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1534659477036-c05235c62402?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1508380702597-707c1b00695c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://plus.uplash.com/pmium_photo-1683129640700-c9c56c82dcdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1441031854696-009616241b2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        '../src/assets/products/glass.jpg',
+        '../src/assets/products/lift.jpg',
+        '../src/assets/products/machinery2.jpg',
+        '../src/assets/products/machinery3.jpg',
+        
       ],
     },
   ];
@@ -150,8 +151,8 @@ const Products = () => {
                   spaceBetween: 20,
                 },
                 1024: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
+                  slidesPerView: 3,
+                  spaceBetween: 30,
                 },
               }}
               autoplay={{
@@ -169,7 +170,7 @@ const Products = () => {
                 // eslint-disable-next-line react/jsx-key
                 <SwiperSlide>
                   <div key={index} className="carousel-item">
-                    <img src={image} className="h-auto rounded-box" alt={`Product ${index}`} />
+                    <img src={image} className="h-auto w-auto rounded-box" alt={`Product ${index}`} />
                   </div>
                 </SwiperSlide>
                   ))}
