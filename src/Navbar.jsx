@@ -38,7 +38,7 @@ const Navbar = () => {
                                 <li><NavLink onClick={scrollToHeader} to="/"><span className="font-semibold">Homepage</span></NavLink></li>
                                 <li><NavLink onClick={scrollToHeader} to="/About"><span className="font-semibold">About Us</span></NavLink></li>
                                 <li><NavLink onClick={scrollToHeader} to="/Products"><span className="font-semibold">Products</span></NavLink></li>
-                                <NavLink to="/Contact" className="btn rounded-full border-0 mt-4 bg-alertColor hover:bg-[#2e9d71] bg-slate-800s text-sm">
+                                <NavLink onClick={scrollToHeader} to="/Contact" className="btn rounded-full border-0 mt-4 bg-alertColor hover:bg-[#2e9d71] bg-slate-800s text-sm">
                                     <span className="px-8 text-brandColor font-semibold">Contact Us</span>
                                 </NavLink>                    
                             </ul>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <a><img src={logo} width={170}/></a>
                 </div>
                 <div className="navbar-end xl:visible invisible">
-                    <NavLink to="/Contact" className="btn rounded-full border-0 bg-white hover:bg-[#2e9d71] bg-slate-800s text-sm">
+                    <NavLink onClick={scrollToHeader} to="/Contact" className="btn rounded-full border-0 bg-white hover:bg-[#2e9d71] bg-slate-800s text-sm">
                         <span className="px-8 text-brandColor font-semibold">Contact Us</span>
                     </NavLink>
                 </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                         <li><NavLink onClick={scrollToHeader} to="/"><span className="font-semibold">Homepage</span></NavLink></li>
                         <li><NavLink onClick={scrollToHeader} to="/About"><span className="font-semibold">About Us</span></NavLink></li>
                         <li><NavLink onClick={scrollToHeader} to="/Products"><span className="font-semibold">Products</span></NavLink></li>
-                        <NavLink to="/Contact" className="btn rounded-full border-0 mt-4 bg-alertColor hover:bg-[#2e9d71] bg-slate-800s text-sm">
+                        <NavLink onClick={scrollToHeader} to="/Contact" className="btn rounded-full border-0 mt-4 bg-alertColor hover:bg-[#2e9d71] bg-slate-800s text-sm">
                             <span className="px-8 text-brandColor font-semibold">Contact Us</span>
                         </NavLink>   
                     </ul>
