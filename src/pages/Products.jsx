@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import { machinery1, machinery2, machinery3, machinery4, modular1, modular2, modular3, modular4, modular5, touch1, touch2, touch3, touch4, touch5 } from '../assets';
+
 import { Autoplay} from 'swiper/modules';
 
 import { Context } from '../App';
@@ -37,11 +39,11 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ],
       images: [
-        "../src/assets/products/2mtouch.jpg",
-        "../src/assets/products/touch.jpg",
-        "../src/assets/products/bru.jpg",
-        "../src/assets/products/touch3.jpg",
-        "../src/assets/products/taj.jpg",
+        touch1,
+        touch2,
+        touch3,
+        touch4,
+        touch5
       ],
     },
     {
@@ -67,12 +69,11 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ], 
       images: [
-        "../src/assets/products/modular.jpg",
-        "../src/assets/products/modular2.jpg",
-        "../src/assets/products/modular3.jpg",
-        "../src/assets/products/modular4.jpg",
-        "../src/assets/products/modular5.jpg",
-        
+        modular1,
+        modular2,
+        modular3,
+        modular4,
+        modular5
       ],
     },
     {
@@ -97,10 +98,10 @@ const Products = () => {
         { "feature": "Density (kg/m3)", "topic": "2500" }
       ],      
       images: [
-        "../src/assets/products/glass.jpg",
-        "../src/assets/products/lift.jpg",
-        "../src/assets/products/machinery2.jpg",
-        "../src/assets/products/machinery3.jpg",
+        machinery1,
+        machinery2,
+        machinery3,
+        machinery4
       ],
     },
   ];

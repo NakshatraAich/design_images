@@ -18,6 +18,22 @@ import team from "./logo/team.png";
 import tick from "./logo/tick.png";
 import menu from "./logo/menu.png";
 
+import machinery1 from "./products/glass.jpg";
+import machinery2 from "./products/lift.jpg";
+import machinery3 from "./products/machinery2.jpg";
+import machinery4 from "./products/machinery3.jpg";
+
+import modular1 from "./products/modular.jpg";
+import modular2 from "./products/modular2.jpg";
+import modular3 from "./products/modular3.jpg";
+import modular4 from "./products/modular4.jpg";
+import modular5 from "./products/modular5.jpg";
+
+import touch1 from "./products/2mtouch.jpg";
+import touch2 from "./products/touch.jpg";
+import touch3 from "./products/bru.jpg";
+import touch4 from "./products/touch3.jpg";
+import touch5 from "./products/taj.jpg";
 
 export{
     logo,
@@ -38,5 +54,19 @@ export{
     satisfaction,
     team,
     tick,
-    menu
+    menu,
+    machinery1,
+    machinery2,
+    machinery3,
+    machinery4,
+    modular1,
+    modular2,
+    modular3,
+    modular4,
+    modular5,
+    touch1,
+    touch2,
+    touch3,
+    touch4,
+    touch5,
 }
