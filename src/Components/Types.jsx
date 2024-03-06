@@ -18,10 +18,6 @@ const Types = () => {
         return null;
     };
 
-    const goToSpecificProduct = () => {
-        scrollToHeader();
-    }
-
     return (
         <section className="px-[50px] sm:px-[90px] xl:px-[160px] flex flex-col tracking-wider py-20">
             <h1 className="text-3xl sm:text-4xl text-textColor font-semibold">Check out wide array<br className="lg:block hidden"/> of products.</h1>
@@ -41,7 +37,7 @@ const Types = () => {
                 </div>
             </div>
 
-            <NavLink to="/Products" className="w-full hidden lg:flex flex-col justify-center items-center mt-10" onClick={goToSpecificProduct}>
+            <NavLink to="/Products" className="w-full hidden lg:flex flex-col justify-center items-center mt-10" onClick={scrollToHeader}>
                 <button className="btn btn-ghost text-brandColor border-0 w-fit px-10  text-semibold font-regular hover:font-semibold rounded-full">See More</button>
             </NavLink>
             
@@ -72,7 +68,7 @@ const Types = () => {
                 </div>
             </div>
             
-            <NavLink to="/Products" className=" w-full lg:hidden flex flex-col justify-center items-center" onClick={goToSpecificProduct}>
+            <NavLink to="/Products" className=" w-full lg:hidden flex flex-col justify-center items-center" onClick={scrollToHeader}>
                 <button className="btn btn-ghost text-brandColor border-0 w-fit px-10 mt-8 text-semibold font-regular hover:font-semibold rounded-full">See More</button>
             </NavLink>
 

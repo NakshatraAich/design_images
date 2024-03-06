@@ -1,17 +1,17 @@
 import { logo_alt as logo, menu } from "./assets"
 import { NavLink } from "react-router-dom"
+import { useEffect } from "react";
 
 const Navbar = () => {
 
     const scrollToHeader = () => {
-        const headerElement = document.getElementById('header'); // Replace 'footer' with the actual id of your footer element
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        }, []);
       
-        if (headerElement) {
-          window.scrollTo({
-            top: headerElement.offsetTop,
-            behavior: 'smooth',
-          });
-        }
+        return null;
     };
 
     return (
