@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 const Footer = () => {
 
   const handleWhatsAppClick = () => {
-    window.open(`whatsapp://send?phone=${919930376620}`, '_blank');
+    window.open(`whatsapp://send?phone=${918000293444}`, '_blank');
   };
 
   const scrollToHeader = () => {
