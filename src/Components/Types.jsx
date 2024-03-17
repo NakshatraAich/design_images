@@ -21,7 +21,7 @@ const Types = () => {
     return (
         <section className="px-[25px] sm:px-[90px] xl:px-[160px] flex flex-col tracking-wider py-20">
             <h1 className="text-3xl sm:text-4xl text-textColor font-semibold">Check out wide array<br className="lg:block hidden"/> of products.</h1>
-            <h2 className="text-sm sm:text-lg text-altTextColor pt-2">From switch panels to machinery view glasses</h2>
+            <h2 className="text-sm sm:text-lg text-altTextColor pt-2">From switch panels to Machinery Glasses</h2>
             <div className="hidden lg:flex flex-row justify-between xl:justify-evenly gap-12 xl:px-16 pt-8">
                 <div className="flex flex-col">
                     <img src={taj} width={300}/>
@@ -33,7 +33,7 @@ const Types = () => {
                 </div>
                 <div className="flex flex-col">
                     <img src={glass_1} width={300}/>
-                    <div className="text-textColor text-xl font-semibold pt-2">Machinery View Glasses</div>
+                    <div className="text-textColor text-xl font-semibold pt-2">Machinery Glasses</div>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@ const Types = () => {
                     <div className="flex flex-col justify-center items-start">
                         <img src={glass_1} className="w-full"/>
                         <div className="">
-                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Machinery View Glasses</div>
+                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Machinery Glasses</div>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ const Types = () => {
                     <div className="flex flex-col justify-center items-start">
                         <img src={glass_1} className="w-full"/>
                         <div className="">
-                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Machinery View Glasses</div>
+                            <div className="text-textColor text-lg sm:text-xl font-semibold pt-2">Machinery Glasses</div>
                         </div>
                     </div>
                 </div>

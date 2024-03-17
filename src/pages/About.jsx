@@ -21,7 +21,7 @@ const About = () => {
         <div className="flex flex-row justify-center">
           <div className="stats stats-vertical sm:stats-horizontal px-[50px] sm:px-[90px] xl:px-[200px] xl:pt-24 pt-8 no-scrollbar overflow-clip">
 
-            <div className="flex lg:flex-row flex-col">
+            <div className="flex sm:flex-row flex-col">
               <div className="stat">
                 <div className="stat-figure text-secondary place-items-center">
                   <img src={product} className="w-12"/>
@@ -37,16 +37,6 @@ const About = () => {
                 <div className="stat-title">Professional<br/> Team</div>
                 <div className="stat-value text-brandColor">50+</div>
               </div>
-            </div>
-
-            <div className="flex lg:flex-row flex-col">
-              <div className="stat">
-                <div className="stat-figure text-secondary">
-                  <img src={satisfaction} className="w-12"/>
-                </div>
-                <div className="stat-title">Satisfied<br/> Customers</div>
-                <div className="stat-value text-brandColor">10K</div>
-              </div>
 
               <div className="stat">
                 <div className="stat-figure text-secondary">
@@ -55,7 +45,7 @@ const About = () => {
                 <div className="stat-title">Our Success<br/> Rate</div>
                 <div className="stat-value text-brandColor">99%</div>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
