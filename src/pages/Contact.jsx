@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
           <div>
             <h1 className="font-semibold">Contact us through a <br/>call!</h1>
-            <h2 className="text-[#9C9C9C] text-sm pt-2">+91 22xxx 33xxx</h2>
+            <h2 className="text-[#9C9C9C] text-sm pt-2">+91 80002 93444</h2>
           </div>
         </div>
         <div className="shrink-0 flex flex-col justify-between w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] border-2 border-[#D8D8D8] rounded-2xl p-6">
@@ -37,7 +37,7 @@ const Contact = () => {
           </div>
           <div>
             <h1 className="font-semibold">Write us a <br/>mail!</h1>
-            <h2 className="text-[#9C9C9C] text-sm pt-2">example@example.com</h2>
+            <h2 className="text-[#9C9C9C] text-sm pt-2">info@design-image.in</h2>
           </div>
         </div>
       </div>
