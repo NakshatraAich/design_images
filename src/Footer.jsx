@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <li>
               <li>Email</li>
-              <li className="text-[.75rem] font-thin">info@design-image.in</li>
+              <li className="text-[.75rem] font-thin">Info@designimageindia.com</li>
             </li>
             <li>
               <li><div onClick={handleWhatsAppClick}>Whatsapp</div></li>

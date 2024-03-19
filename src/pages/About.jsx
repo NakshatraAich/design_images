@@ -1,4 +1,4 @@
-import { logo, product, team, satisfaction, tick } from "../assets";
+import { logo, product, team, tick } from "../assets";
 
 const About = () => {
   return (
@@ -6,7 +6,7 @@ const About = () => {
       <div className="tracking-widest py-20 sm:py-24">
         <div className="px-[25px] sm:px-[90px] xl:px-[200px] flex flex-col gap-2 pt-8 sm:pt-0 pb-16">
           <h1 className="text-4xl sm:text-6xl text-textColor font-semibold">About Us</h1>
-          <h2 className="text-altTextColor max-w-[750px]">With over 50+ years of experience in the glass industry and registered in the year 1972. </h2>
+          <h2 className="text-altTextColor">Design Image is a part of Shiv Glass Industries, which was started in 1972, this division deals with Glass Switch/Touch Plates production since 2017. </h2>
         </div>
         <div className="px-[25px] sm:px-[90px] xl:px-[200px] flex flex-col xl:flex-row gap-20 xl:gap-32 items-center">
           <img src={logo} className="max-w-[30rem]"/>
