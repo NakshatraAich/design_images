@@ -37,7 +37,7 @@ const Contact = () => {
           </div>
           <div>
             <h1 className="font-semibold">Write us a <br/>mail!</h1>
-            <h2 className="text-[#9C9C9C] text-sm pt-2">info@design-image.in</h2>
+            <h2 className="text-[#9C9C9C] text-sm pt-2">Info@designimageindia.com</h2>
           </div>
         </div>
       </div>

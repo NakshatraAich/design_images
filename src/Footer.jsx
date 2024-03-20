@@ -46,7 +46,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <form className="flex basis-2/4 flex-col font-Inter w-full sm:text-sm text-xs" action="" method="POST">
+        <form className="flex basis-2/4 flex-col font-Inter w-full sm:text-sm text-xs" action="https://formspree.io/f/meqylrgw" method="POST">
           <h1 className="text-white text-4xl lg:text-2xl font-semibold pb-4">Send Us Your Inquiries!</h1>
           <div className='grid grid-cols-2 gap-8'>
             <input name='First Name' placeholder='First Name' type='text' className='bg-brandColor border-b-[1px] border-white placeholder-white place text-white focus:border-brandBlack outline-none pb-[10px] py-2'/>

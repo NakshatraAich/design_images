@@ -12,7 +12,7 @@ const Hero = () => {
             <NavLink to="/Products"><button className="btn px-12 w-fit text-white font-semibold border-0 bg-brandColor hover:bg-[#1d4e29] rounded-full">See Our Products</button></NavLink>
         </div>
         <div className="pr-4">
-            <img src={switch_1} width={570}/>
+            <img src={switch_1} width={570} height={570}/>
         </div>
     </section>
   )
